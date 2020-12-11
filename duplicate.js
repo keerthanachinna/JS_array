@@ -34,3 +34,36 @@ const items=[
     { name:'softa',price:25},
     { name:'card',price:1000},
 ]
+
+
+import {HttpClient} @angular/http;
+
+constructor(private http:HttpClient){}
+
+class servicecomponent {
+
+readonly url="http:localhost:3000/api";
+register:any;
+this.register={
+"name":"keerthana",
+"email":"kee@gmail.com"
+}
+savereg(){
+
+return this.http.post(url,{this.register}).promise(
+.resolve()
+){};
+}
+getreg(){
+
+return this.http.get(url);
+}
+
+}
+}
+
+
+var a="hi keerthana how are you my name is keerthana".
+ var b=a.split(" ");
+
+
